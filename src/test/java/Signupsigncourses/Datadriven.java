@@ -33,8 +33,6 @@ public class Datadriven {
 		String Excelpath="C:/Automation/signup_and_signin_data.xlsx";
 		ExcelUtil excel=new ExcelUtil(Excelpath,"Sheet1");
 		
-		
-		
 		for(int i=1; i<excel.getRowCount(); i++)
 		{
 			String name=excel.getCellData(i,0);
