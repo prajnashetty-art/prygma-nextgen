@@ -49,8 +49,8 @@ public class data_driven {
 			driver.findElement(By.id("remember-me")).click();
 			driver.findElement(By.xpath("//button[@type='submit']")).click();
 			Thread.sleep(2000);
-			System.out.println("Logged in successfully");
-			test.pass("Logged in successfully");
+			System.out.println("Login successful");
+			test.pass("Login successful");
 		}
 		catch (Exception e)
 		{

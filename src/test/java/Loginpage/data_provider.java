@@ -63,7 +63,7 @@ public class data_provider {
 		return data;
 	}
 	@AfterClass
-	public void teardown()
+	public void tearDown()
 	{
 		extent.flush();
 		driver.quit();

@@ -61,5 +61,4 @@ public class using_testng {
 		extent.flush();
 		driver.quit();
 	}
-	
 }

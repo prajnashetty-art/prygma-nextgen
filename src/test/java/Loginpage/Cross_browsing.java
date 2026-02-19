@@ -32,50 +32,51 @@ public class Cross_browsing {
 		ExtentSparkReporter spark=new ExtentSparkReporter("Report_2.html");
 		spark.config().setTheme(Theme.STANDARD);
 		spark.config().setDocumentTitle("Login_crossbrowsing_approach");
-//		extent.attachReporter(spark);
-		
+		extent.attachReporter(spark);
 	}
 	@Test
 	@Parameters("browsers")
 	
-		public void crossbrowsers(String browsername)
-		{
-		   test=extent.createTest("Login_Test_crossbrowsing approach");
+	public void crossbrowsers(String browsername)
+	{
+		test=extent.createTest("Login_Test_crossbrowsing approach");
 		   
-			if(browsername.equalsIgnoreCase("chrome"))
-			{
-				driver=new ChromeDriver();
-			}
-			else if(browsername.equalsIgnoreCase("edge"))
-				{
-				driver=new EdgeDriver();
-				}
-			try
-			{
-			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-			driver.get("https://www.prygmanextgen.com/");
-			driver.navigate().to("https://www.prygmanextgen.com/signin");
-			driver.findElement(By.id("email")).sendKeys("gocoxir121@fentaoba.com");
-			driver.findElement(By.id("password")).sendKeys("goco@123");
-			driver.findElement(By.id("remember-me")).click();
-			driver.findElement(By.xpath("//button[@type='submit']")).click();
-			System.out.println("Logged in successfully");
-			test.pass("Logged in successfully");
-			}
-			catch(Exception e)
-			{
-				System.out.println("Login failed");
-				test.fail("Login failed");
-			}
-			finally
-			{
-			driver.quit();
-			}
+		if(browsername.equalsIgnoreCase("chrome"))
+		{
+			driver=new ChromeDriver();
 		}
-			@AfterMethod
-			public void generatereport()
+		else if(browsername.equalsIgnoreCase("edge"))
 			{
-				extent.flush();
+			driver=new EdgeDriver();
 			}
+		try
+		{
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+		driver.get("https://www.prygmanextgen.com/");
+		driver.navigate().to("https://www.prygmanextgen.com/signin");
+		driver.findElement(By.id("email")).sendKeys("gocoxir121@fentaoba.com");
+		driver.findElement(By.id("password")).sendKeys("goco@123");
+		driver.findElement(By.id("remember-me")).click();
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		System.out.println("Logged in successfully");
+		test.pass("Logged in successfully");
+		}
+		catch(Exception e)
+		{
+			System.out.println("Login failed");
+			test.fail("Login failed");
+		}
+		finally
+		{
+		driver.quit();
+		}
+	}
+		@AfterMethod
+		public void generatereport()
+		{
+			extent.flush();
+		}
 }
+
+		 

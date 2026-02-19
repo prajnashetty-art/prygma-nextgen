@@ -18,7 +18,7 @@ public class Normal_approach {
 		ExtentSparkReporter spark=new ExtentSparkReporter("Report_1.html");
 		spark.config().setTheme(Theme.DARK);
 		spark.config().setDocumentTitle("Login_normal_approach");
-	//	extent.attachReporter(spark);
+	    extent.attachReporter(spark);
 		
 		ExtentTest test=extent.createTest("Login Test - Normal Approach");
 		
@@ -45,5 +45,5 @@ public class Normal_approach {
 		driver.quit();
 		extent.flush();
 		}
-		}
+	}	
 }
