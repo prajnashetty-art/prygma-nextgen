@@ -26,8 +26,7 @@ public class CoursesMaterialsworkshopsJobsportal {
 		ChromeDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(9));
-		try
-		{
+		try{
 			driver.get("https://www.prygmanextgen.com/");
 			driver.findElement(By.xpath("/html/body/div[1]/nav/div/div/div[2]/div[1]")).click();
 			System.out.println("Navigated to Courses page");
@@ -46,13 +45,11 @@ public class CoursesMaterialsworkshopsJobsportal {
 			test.pass("Navigated to Jobs Portal page");
 			Thread.sleep(2000);
 		}
-		catch(Exception e)
-		{
+		catch(Exception e){
 			System.out.println("Navigation failed");
 			test.pass("Navigation failed");
 		}
-		finally
-		{
+		finally{
 			extent.flush();
 			driver.quit();
 		}
