@@ -41,7 +41,8 @@ public class Normal_approach {
 			System.out.println("Login failed");
 			test.pass("Login failed");
 		}
-		finally {
+		finally
+		{
 		driver.quit();
 		extent.flush();
 		}

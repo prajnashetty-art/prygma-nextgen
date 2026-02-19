@@ -46,7 +46,6 @@ public class data_provider {
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		System.out.println("Login successful");
 		test.pass("Login successful");
-		
 	}
 	@DataProvider(name="Automate_data")
 	public Object[][] passdata()

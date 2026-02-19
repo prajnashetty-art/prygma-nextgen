@@ -41,6 +41,7 @@ public class data_driven {
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(9));
+		
 		try {
 			driver.get("https://www.prygmanextgen.com/signin");
 			driver.findElement(By.xpath("/html/body/div[1]/nav/div/div/div[2]/div[5]/div/div[1]")).click();

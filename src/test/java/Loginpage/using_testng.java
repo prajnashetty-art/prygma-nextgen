@@ -53,7 +53,6 @@ public class using_testng {
 			System.out.println("Login failed");
 			test.fail("Login failed");
 		}
-		
 	}
 	@AfterMethod
 	public void result()

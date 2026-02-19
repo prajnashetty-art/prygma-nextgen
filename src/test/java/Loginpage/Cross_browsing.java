@@ -67,8 +67,7 @@ public class Cross_browsing {
 			System.out.println("Login failed");
 			test.fail("Login failed");
 		}
-		finally
-		{
+		finally{
 		driver.quit();
 		}
 	}
