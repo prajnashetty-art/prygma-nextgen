@@ -31,7 +31,6 @@ public class data_provider {
 		spark.config().setDocumentTitle("Signin_using_dataprovider");
 		extent.attachReporter(spark);
 		
-		
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(9));
