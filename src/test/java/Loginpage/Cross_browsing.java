@@ -32,7 +32,7 @@ public class Cross_browsing {
 		ExtentSparkReporter spark=new ExtentSparkReporter("Report_2.html");
 		spark.config().setTheme(Theme.STANDARD);
 		spark.config().setDocumentTitle("Login_crossbrowsing_approach");
-		extent.attachReporter(spark);
+//		extent.attachReporter(spark);
 		
 	}
 	@Test
