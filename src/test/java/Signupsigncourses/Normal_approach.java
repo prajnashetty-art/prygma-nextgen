@@ -70,8 +70,7 @@ public class Normal_approach {
 			test.pass("Landed on courses page");
 			
 		}
-		catch (Exception e)
-		{
+		catch (Exception e)	{
 			System.out.println("Navigation_failed");
 			test.fail("Navigation_failed");
 		}

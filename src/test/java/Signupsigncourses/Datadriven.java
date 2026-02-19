@@ -83,8 +83,7 @@ public class Datadriven {
 				System.out.println("Landed on courses page");
 				test.pass("Landed on courses page");
 				
-			}catch (Exception e)
-			{
+			}catch (Exception e){
 				System.out.println("Naviagtion_failed");
 				test.fail("Naviagtion_failed");
 			}finally {

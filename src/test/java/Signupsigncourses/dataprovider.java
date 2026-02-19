@@ -39,8 +39,9 @@ public class dataprovider {
 	public void register(String name, String email, String password, String confirmpassword) throws InterruptedException
 	{
 		test=extent.createTest("Signup_signout_signin");
-		//signup
 		driver.get("https://www.prygmanextgen.com/");
+		
+		//sign up
 		driver.findElement(By.xpath("/html/body/div[1]/nav/div/div/div[2]/div[5]/div/div[2]")).click();
 		driver.findElement(By.id("name")).sendKeys(name);
 		driver.findElement(By.id("email")).sendKeys(email);
