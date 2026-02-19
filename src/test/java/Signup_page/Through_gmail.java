@@ -23,7 +23,6 @@ public class Through_gmail {
 		spark.config().setTheme(Theme.STANDARD);
 		spark.config().setDocumentTitle("Through_gmail");
 		extent.attachReporter(spark);
-		
 		ExtentTest test=extent.createTest("Signup_through_gmail");
 				
 		EdgeDriver driver=new EdgeDriver();
@@ -51,6 +50,7 @@ public class Through_gmail {
 		driver.switchTo().window(parentwindow);
 		Thread.sleep(15000);
 		String url = driver.getCurrentUrl();
+		
 		if (url.contains("/courses")) {
 		    System.out.println("Sign up successful");
 		    test.pass("Sign up successful");

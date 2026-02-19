@@ -52,8 +52,7 @@ public class Normal_approach {
 			System.out.println("Sign_up unsuccessful");
 			test.fail("Sign_up unsuccessful");
 		}
-		finally
-		{
+		finally {
 			driver.quit();
 			extent.flush();
 		}

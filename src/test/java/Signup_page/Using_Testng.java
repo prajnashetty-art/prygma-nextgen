@@ -63,7 +63,6 @@ public class Using_Testng {
 			test.fail("Signup unsuccesssful");
 		}
 	}
-		
 	@AfterMethod
 	public void result()
 	{

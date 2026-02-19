@@ -52,7 +52,7 @@ public class Crossbrowsers {
 				driver.get("https://www.prygmanextgen.com/");
 				driver.navigate().to("https://www.prygmanextgen.com/signup");
 				driver.findElement(By.id("name")).sendKeys("Dia K");
-				driver.findElement(By.id("email")).sendKeys("rolelef805@fentaoba.com");
+				driver.findElement(By.id("email")).sendKeys("rolel805@fentaoba.com");
 				driver.findElement(By.id("password")).sendKeys("Role@123");
 				driver.findElement(By.id("confirmPassword")).sendKeys("Role@123");
 				Thread.sleep(2000);
